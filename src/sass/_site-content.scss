@@ -1,0 +1,18 @@
+#content{
+	//@extend .row;
+	@extend .container; 
+
+
+
+	#primary{
+		@extend .col-sm-8;
+
+		.entry-header{ @extend .p-header-primary; }
+	}
+
+	#secondary{
+		@extend .col-sm-4;
+
+		.widget-title{ @extend .p-header-secondary; }
+	}
+}

@@ -1,0 +1,15 @@
+$primary-color : #CDFFDC;
+$secondary-color : #50F39F;
+$tertiary-color : #DA4747;
+$mobile-size: 599px; 
+
+@import "bs/bootstrap-compass";
+@import "bs/bootstrap-mincer";
+@import "bs/bootstrap-sprockets";
+@import "bs/bootstrap";
+
+@import "fonts";
+@import "mixins";
+@import "properties";
+@import "site-header";
+@import "site-content";
