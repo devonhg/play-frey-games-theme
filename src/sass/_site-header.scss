@@ -1,3 +1,37 @@
 #masthead{
+
+	@extend .p-def-padding;
 	@extend .container; 
+
+	img{
+		height: 150px;
+		width: auto; 
+	}
+
+	.site-branding{
+		display: inline-block; 
+		aside{
+			margin: 0; 
+		}
+	}
+
+	.wrapper-line{
+		border-bottom: 2px solid $secondary-color; 
+		@extend .p-def-padding; 
+	}.wrapper-line:after{
+		@extend .clearfix; 
+	}
+
+	nav{
+		float: right; 
+		display: inline-block; 
+		width: auto !important; 	
+
+		a{
+			padding: 15px;
+			margin-right: 5px;
+		}a:last-child{
+			margin-right: 0; 
+		}
+	}
 }
