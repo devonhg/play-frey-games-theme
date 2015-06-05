@@ -5663,7 +5663,7 @@ button.close {
   float: none;
   margin: 0 auto; }
 
-.p-button-reset {
+.p-button-reset, #masthead .menu-toggle {
   border: none;
   -webkit-appearance: none;
   outline: none;
@@ -5704,7 +5704,8 @@ button.close {
   height: 150px;
   width: auto; }
 #masthead .site-branding {
-  display: inline-block; }
+  display: inline-block;
+  max-width: 300px; }
   #masthead .site-branding aside {
     margin: 0; }
 #masthead .wrapper-line {
@@ -5713,16 +5714,64 @@ button.close {
   float: right;
   display: inline-block;
   width: auto !important; }
+  #masthead nav .current_page_item a {
+    border-bottom: 3px solid #CDFFDC; }
+  #masthead nav li {
+    margin-right: 5px; }
+  #masthead nav li:last-child {
+    margin-right: 0; }
   #masthead nav a {
     padding: 15px;
-    margin-right: 5px; }
-  #masthead nav a:last-child {
-    margin-right: 0; }
+    font-size: 120%;
+    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #CDFFDC; }
+  #masthead nav a:hover, #masthead nav a:active {
+    text-decoration: none;
+    border-bottom: 3px solid #CDFFDC; }
+#masthead .menu-toggle {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 150%;
+  width: 100%;
+  font-weight: bold;
+  background-color: #CDFFDC; }
 
 #content {
   background-color: #fff; }
 
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #masthead {
+    text-align: center; }
+    #masthead .site-branding {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%; }
+    #masthead nav {
+      float: none;
+      width: 100%;
+      display: block; }
+      #masthead nav li {
+        width: 100%;
+        float: none; }
+      #masthead nav .current_page_item a {
+        border: 0;
+        background-color: #222; }
+      #masthead nav a:hover {
+        border-bottom: none; } }
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 body {
   background-color: #000; }
+
+img {
+  max-width: 100% !important;
+  height: auto !important; }
 
 /*# sourceMappingURL=sass.css.map */

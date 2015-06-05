@@ -3,6 +3,8 @@ $secondary-color : #50F39F;
 $tertiary-color : #DA4747;
 $mobile-size: 599px; 
 
+
+
 @import "bs/bootstrap-compass";
 @import "bs/bootstrap-mincer";
 @import "bs/bootstrap-sprockets";
@@ -14,6 +16,13 @@ $mobile-size: 599px;
 @import "site-header";
 @import "site-content";
 
+@import "media-queries";
+
 body{
 	background-color: #000;
+}
+
+img{
+	max-width: 100% !important;
+	height: auto !important;
 }
