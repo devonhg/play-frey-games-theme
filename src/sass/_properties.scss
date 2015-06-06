@@ -56,21 +56,23 @@
 .p-header-secondary{
 	font-family: color_basicregular;
 	text-transform: uppercase; 
+	background-color: $grey-color; 
+	padding: 8px; 
+	margin: 0;
+	h1,h2,h3,h4,h5,h6 { margin: 0; }
+	font-size: 100%;
+	color: $font-grey-color;
+	a:hover{
+		text-decoration: none; 
+	}
 }
 
 .p-header-primary{
 	@extend .p-header-secondary; 
+	color: $secondary-color; 
+	border-left: 6px solid darken( $secondary-color, 30% );	
 }
 
-.p-header-flashy{
-	@extend .p-header-primary; 
-	background-color: #222; 
-	padding: 8px; 
-	margin: 0;
-	h1,h2,h3,h4,h5,h6 { margin: 0; }
-	border-left: 6px solid darken( $secondary-color, 30% );	
-	color: $secondary-color; 
-}
 
 
 @media screen and (max-width: $mobile-size){

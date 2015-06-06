@@ -13,11 +13,6 @@
 
 get_header(); ?>
 
-	<?php if ( is_active_sidebar( 'above-content' ) ) : ?>
-		<div id="above-content" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'above-content' ); ?>
-		</div><!-- #primary-sidebar -->
-	<?php endif; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -50,11 +45,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<?php if ( is_active_sidebar( 'below-content' ) ) : ?>
-		<div id="below-content" class="widget-area" role="complementary">
-			<?php dynamic_sidebar( 'below-content' ); ?>
-		</div><!-- #primary-sidebar -->
-	<?php endif; ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

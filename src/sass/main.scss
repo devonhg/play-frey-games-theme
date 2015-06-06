@@ -1,6 +1,8 @@
 $primary-color : #CDFFDC;
 $secondary-color : #50F39F;
 $tertiary-color : #DA4747;
+$grey-color : #222; 
+$font-grey-color: #99998A;
 $mobile-size: 599px; 
 
 
@@ -15,6 +17,7 @@ $mobile-size: 599px;
 @import "properties";
 @import "site-header";
 @import "site-content";
+@import "site-footer";
 
 @import "media-queries";
 

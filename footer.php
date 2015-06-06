@@ -11,6 +11,12 @@
 
 	</div><!-- #content -->
 
+	<?php if ( is_active_sidebar( 'below-content' ) ) : ?>
+		<div id="below-content" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'below-content' ); ?>
+		</div><!-- #primary-sidebar -->
+	<?php endif; ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<?php if ( is_active_sidebar( 'footer-widget' ) ) : ?>
@@ -20,9 +26,7 @@
 		<?php endif; ?>
 		
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
+			<sub>All website content &copy; <?php echo date('Y') . " " . get_bloginfo('name') ; ?> unless otherwise specified.</sub>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

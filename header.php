@@ -42,4 +42,10 @@
 		</div>
 	</header><!-- #masthead -->
 
+	<?php if ( is_active_sidebar( 'above-content' ) ) : ?>
+		<div id="above-content" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'above-content' ); ?>
+		</div><!-- #primary-sidebar -->
+	<?php endif; ?>
+
 	<div id="content" class="site-content">
