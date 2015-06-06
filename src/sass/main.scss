@@ -23,6 +23,10 @@ $mobile-size: 599px;
 
 body{
 	background-color: #111;
+	background-size: contain;
+	background-repeat: no-repeat !important; 
+	background-position: center center !important; 
+	background-attachment: fixed !important; 
 }
 
 img{

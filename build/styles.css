@@ -5799,7 +5799,8 @@ button.close {
   #above-content aside:nth-child(5),
   #below-content aside:nth-child(1),
   #below-content aside:nth-child(5) {
-    width: 100%; }
+    width: 100%;
+    clear: both; }
   #above-content aside:nth-child(2),
   #above-content aside:nth-child(3),
   #above-content aside:nth-child(4),
@@ -5875,7 +5876,11 @@ button.close {
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 body {
-  background-color: #111; }
+  background-color: #111;
+  background-size: contain;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-attachment: fixed !important; }
 
 img {
   max-width: 100% !important;
