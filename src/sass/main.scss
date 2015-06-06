@@ -19,10 +19,15 @@ $mobile-size: 599px;
 @import "media-queries";
 
 body{
-	background-color: #000;
+	background-color: #111;
 }
 
 img{
 	max-width: 100% !important;
 	height: auto !important;
+}
+
+#page{
+	@extend .container;
+	background-color: #000;
 }
