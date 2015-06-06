@@ -5743,7 +5743,11 @@ button.close {
 
 .p-header-primary, #content #primary .entry-header {
   color: #50F39F;
-  border-left: 6px solid #0b9f53; }
+  border-left: 6px solid #0b9f53;
+  text-align: center; }
+  .p-header-primary h1, #content #primary .entry-header h1 {
+    border-bottom: 2px solid #DA4747;
+    text-align: center; }
 
 @media screen and (max-width: 599px) {
   .p-mobile-reset {
@@ -5842,6 +5846,16 @@ button.close {
   #content .page-header {
     color: #CDFFDC;
     border-bottom: 3px solid #222; }
+  #content .type-pt_games.ar_shortcode {
+    padding: 10px 0;
+    border-bottom: 3px solid #222;
+    text-align: center; }
+    #content .type-pt_games.ar_shortcode h1 {
+      border-bottom: 2px solid #DA4747; }
+  #content .media-list {
+    margin: 0; }
+  #content .GMEPLG-excerpt {
+    padding: 5px; }
 
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
