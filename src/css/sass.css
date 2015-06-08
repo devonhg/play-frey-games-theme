@@ -5823,8 +5823,6 @@ button.close {
     font-family: Georgia, serif; }
   #content #primary article, #content #primary section {
     background-color: #e7ffee; }
-  #content #primary .hentry {
-    margin: 20px 0; }
   #content #secondary {
     color: #999; }
     #content #secondary ul, #content #secondary div {
@@ -5934,5 +5932,8 @@ img {
 
 #page {
   background-color: #000; }
+
+#search .hentry {
+  margin: 20px 0; }
 
 /*# sourceMappingURL=sass.css.map */
