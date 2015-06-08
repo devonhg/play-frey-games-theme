@@ -14,8 +14,18 @@
 		<div class="entry-meta">
 			<?php _s_posted_on(); ?>
 		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
 
+	</header><!-- .entry-header -->
+	<?php
+		$out = "";
+    	if ( has_post_thumbnail( $post->ID ) ){
+	    	$out .= "<div class='" . "tn-image" . "'>";
+	    		$out .= get_the_post_thumbnail( $post->ID, "full" ); 
+	    	$out .= "</div>";
+		}
+
+		echo $out;
+	?>
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php

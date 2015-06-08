@@ -72,7 +72,7 @@
 	color: $secondary-color; 
 	border-left: 6px solid darken( $secondary-color, 30% );	
 	text-align: center; 
-	h1 { 
+	h1,h2,h3 { 
 		border-bottom: 2px solid $tertiary-color; 
 		text-align: center; 
 	}
