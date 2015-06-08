@@ -27,17 +27,17 @@
 	#primary{
 		@extend .col-sm-8;
 
-		.entry-header{ 
+		.entry-header, .page-header{ 
 			@extend .p-header-primary;
 		}
 
-		.entry-content{
+		.entry-content, .page-content{
 			padding: 15px; 
 			font-size: 120%;
 			font-family: Georgia, serif;
 		}
 
-		article{
+		article, section{
 			background-color: lighten( $primary-color, 5%);
 		}
 	}

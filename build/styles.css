@@ -5720,7 +5720,7 @@ button.close {
   border-left: 6px solid #00e745;
   border-radius: 4px; }
 
-.p-header-secondary, .p-header-primary, #content #primary .entry-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header, #above-content h1,
+.p-header-secondary, .p-header-primary, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header, #above-content h1,
 #below-content h1, #content #secondary .widget-title {
   font-family: color_basicregular;
   text-transform: uppercase;
@@ -5729,23 +5729,23 @@ button.close {
   margin: 0;
   font-size: 100%;
   color: #99998A; }
-  .p-header-secondary h1, .p-header-primary h1, #content #primary .entry-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, #above-content h1 h1,
-  #below-content h1 h1, #content #secondary .widget-title h1, .p-header-secondary h2, .p-header-primary h2, #content #primary .entry-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, #above-content h1 h2,
-  #below-content h1 h2, #content #secondary .widget-title h2, .p-header-secondary h3, .p-header-primary h3, #content #primary .entry-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3, #above-content h1 h3,
-  #below-content h1 h3, #content #secondary .widget-title h3, .p-header-secondary h4, .p-header-primary h4, #content #primary .entry-header h4, #content .type-pt_games.ar_shortcode h1 h4, #content .GMEPLG-news .GMEPLG-news-header h4, #above-content h1 h4,
-  #below-content h1 h4, #content #secondary .widget-title h4, .p-header-secondary h5, .p-header-primary h5, #content #primary .entry-header h5, #content .type-pt_games.ar_shortcode h1 h5, #content .GMEPLG-news .GMEPLG-news-header h5, #above-content h1 h5,
-  #below-content h1 h5, #content #secondary .widget-title h5, .p-header-secondary h6, .p-header-primary h6, #content #primary .entry-header h6, #content .type-pt_games.ar_shortcode h1 h6, #content .GMEPLG-news .GMEPLG-news-header h6, #above-content h1 h6,
+  .p-header-secondary h1, .p-header-primary h1, #content #primary .entry-header h1, #content #primary .page-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, #above-content h1 h1,
+  #below-content h1 h1, #content #secondary .widget-title h1, .p-header-secondary h2, .p-header-primary h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, #above-content h1 h2,
+  #below-content h1 h2, #content #secondary .widget-title h2, .p-header-secondary h3, .p-header-primary h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3, #above-content h1 h3,
+  #below-content h1 h3, #content #secondary .widget-title h3, .p-header-secondary h4, .p-header-primary h4, #content #primary .entry-header h4, #content #primary .page-header h4, #content .type-pt_games.ar_shortcode h1 h4, #content .GMEPLG-news .GMEPLG-news-header h4, #above-content h1 h4,
+  #below-content h1 h4, #content #secondary .widget-title h4, .p-header-secondary h5, .p-header-primary h5, #content #primary .entry-header h5, #content #primary .page-header h5, #content .type-pt_games.ar_shortcode h1 h5, #content .GMEPLG-news .GMEPLG-news-header h5, #above-content h1 h5,
+  #below-content h1 h5, #content #secondary .widget-title h5, .p-header-secondary h6, .p-header-primary h6, #content #primary .entry-header h6, #content #primary .page-header h6, #content .type-pt_games.ar_shortcode h1 h6, #content .GMEPLG-news .GMEPLG-news-header h6, #above-content h1 h6,
   #below-content h1 h6, #content #secondary .widget-title h6 {
     margin: 0; }
-  .p-header-secondary a:hover, .p-header-primary a:hover, #content #primary .entry-header a:hover, #content .type-pt_games.ar_shortcode h1 a:hover, #content .GMEPLG-news .GMEPLG-news-header a:hover, #above-content h1 a:hover,
+  .p-header-secondary a:hover, .p-header-primary a:hover, #content #primary .entry-header a:hover, #content #primary .page-header a:hover, #content .type-pt_games.ar_shortcode h1 a:hover, #content .GMEPLG-news .GMEPLG-news-header a:hover, #above-content h1 a:hover,
   #below-content h1 a:hover, #content #secondary .widget-title a:hover {
     text-decoration: none; }
 
-.p-header-primary, #content #primary .entry-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header {
+.p-header-primary, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header {
   color: #50F39F;
   border-left: 6px solid #0b9f53;
   text-align: center; }
-  .p-header-primary h1, #content #primary .entry-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, .p-header-primary h2, #content #primary .entry-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, .p-header-primary h3, #content #primary .entry-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3 {
+  .p-header-primary h1, #content #primary .entry-header h1, #content #primary .page-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, .p-header-primary h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, .p-header-primary h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3 {
     border-bottom: 2px solid #DA4747;
     text-align: center; }
 
@@ -5815,11 +5815,11 @@ button.close {
 
 #content {
   font-family: Georgia, serif; }
-  #content #primary .entry-content {
+  #content #primary .entry-content, #content #primary .page-content {
     padding: 15px;
     font-size: 120%;
     font-family: Georgia, serif; }
-  #content #primary article {
+  #content #primary article, #content #primary section {
     background-color: #e7ffee; }
   #content #secondary {
     color: #999; }
