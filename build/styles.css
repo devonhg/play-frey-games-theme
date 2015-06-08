@@ -5815,16 +5815,24 @@ button.close {
 
 #content {
   font-family: Georgia, serif; }
-  #content #primary .entry-content, #content #primary .page-content {
+  #content #primary .entry-content,
+  #content #primary .page-content,
+  #content #primary .entry-summary {
     padding: 15px;
     font-size: 120%;
     font-family: Georgia, serif; }
   #content #primary article, #content #primary section {
     background-color: #e7ffee; }
+  #content #primary .hentry {
+    margin: 20px 0; }
   #content #secondary {
     color: #999; }
     #content #secondary ul, #content #secondary div {
       padding: 10px; }
+    #content #secondary .widget_search .search-field,
+    #content #secondary .widget_search label {
+      width: 100%;
+      text-align: center; }
   #content #secondary a,
   #content #primary a {
     color: #DA4747; }
