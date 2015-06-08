@@ -17,7 +17,16 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
+	<?php
+	if ( has_post_thumbnail( $post->ID ) ){
+		$out = "";
+    	$out .= "<div class='" . "tn-image" . "'>";
+    		$out .= get_the_post_thumbnail( $post->ID, "full" ); 
+    	$out .= "</div>";
 
+    	echo $out; 
+	}
+	?>
 	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
