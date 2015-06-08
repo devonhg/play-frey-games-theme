@@ -20,7 +20,11 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+	    	if ( has_post_thumbnail( $post->ID ) ){
+		    	$out .= "<div class='" . "tn-image" . "'>";
+		    		$out .= get_the_post_thumbnail( $post->ID, "full" ); 
+		    	$out .= "</div>";
+			}
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
