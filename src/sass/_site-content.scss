@@ -42,6 +42,14 @@
 		article, section{
 			background-color: lighten( $primary-color, 5%);
 		}
+
+		.GMEPLG-news-main-header{
+			@extend .p-header-secondary;
+
+			text-align: center; 
+			color: $secondary-color;
+			margin: 20px 0;  
+		}
 	}
 
 	#secondary{
