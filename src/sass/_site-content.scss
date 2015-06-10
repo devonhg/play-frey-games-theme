@@ -19,6 +19,9 @@
 	aside:nth-child(4){ 
 		@extend .col-sm-4;
 		text-align: center; 
+		div{
+			padding: 15px;
+		}
 	}
 }
 
@@ -67,6 +70,8 @@
 			width: 100%;
 			text-align: center; 
 		}
+
+
 	}
 
 	#secondary,
