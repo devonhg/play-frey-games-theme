@@ -5804,7 +5804,8 @@ button.close {
   #below-content aside:nth-child(1),
   #below-content aside:nth-child(5) {
     width: 100%;
-    clear: both; }
+    clear: both;
+    margin-bottom: 10px; }
   #above-content aside:nth-child(2),
   #above-content aside:nth-child(3),
   #above-content aside:nth-child(4),
