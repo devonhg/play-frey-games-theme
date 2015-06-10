@@ -5692,7 +5692,7 @@ button.close {
   float: none;
   margin: 0 auto; }
 
-.p-button-reset, #masthead .menu-toggle {
+.p-button-reset, #masthead .menu-toggle, #page .btn {
   border: none;
   -webkit-appearance: none;
   outline: none;
@@ -5898,6 +5898,32 @@ button.close {
     width: 100%;
     height: auto; }
 
+body {
+  background-color: #111;
+  background-size: contain;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-attachment: fixed !important; }
+
+img {
+  max-width: 100% !important;
+  height: auto !important; }
+
+#page {
+  background-color: #000; }
+
+#search .hentry {
+  margin: 20px 0; }
+
+#page .btn {
+  background-color: #222;
+  color: #50F39F;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 100%;
+  text-transform: uppercase;
+  font-family: color_basicregular; }
+
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
@@ -5930,22 +5956,6 @@ button.close {
     padding: 2px !important; } }
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
-body {
-  background-color: #111;
-  background-size: contain;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-attachment: fixed !important; }
-
-img {
-  max-width: 100% !important;
-  height: auto !important; }
-
-#page {
-  background-color: #000; }
-
-#search .hentry {
-  margin: 20px 0; }
 
 /*# sourceMappingURL=sass.css.map */
 

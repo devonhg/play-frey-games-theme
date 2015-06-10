@@ -19,7 +19,7 @@ $mobile-size: 599px;
 @import "site-content";
 @import "site-footer";
 
-@import "media-queries";
+
 
 body{
 	background-color: #111;
@@ -42,3 +42,16 @@ img{
 #search .hentry{
 	margin: 20px 0; 
 }
+
+#page .btn{
+	@extend .p-button-reset;
+	background-color: $grey-color; 
+	color: $secondary-color;
+	padding: 15px; 
+	border-radius: 10px; 
+	font-size: 100%;
+	text-transform: uppercase; 
+	font-family: color_basicregular;
+}
+
+@import "media-queries";
