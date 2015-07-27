@@ -25,6 +25,55 @@
 	}
 }
 
+/*Home Page Settings*/
+.home.blog{
+
+	.front-header{
+		text-align: center; 
+		color: $primary-color;
+		text-decoration: underline; 
+	}
+
+	#primary{
+		width: 100% !important;
+
+		#main{
+			@extend .row; 
+		}
+
+		//Front Page class and modifications
+		.front-page{
+			//border: 3px solid red; 
+			@extend .col-sm-3;
+
+			text-align: center; 
+			background-color: transparent !important; 
+
+			.tn-image{
+				height: 100px; 
+				overflow: hidden; 
+				img{
+					margin-top: -15px; 
+				}
+			}
+
+			.article-wrapper{
+				background-color: $primary-color; 
+				min-height: 150px; 		
+				padding: 6px; 
+			}
+
+			h1, h3{
+				display: inline-block; 
+				margin: 0;
+				padding: 0; 
+			}h3{
+				padding: 8px 0; 
+			}
+		}		
+	}
+}
+
 #content{
 	font-family: Georgia, serif;
 	#primary{
@@ -53,6 +102,9 @@
 			color: $secondary-color;
 			margin: 20px 0;  
 		}
+
+	
+
 	}
 
 	#secondary{
