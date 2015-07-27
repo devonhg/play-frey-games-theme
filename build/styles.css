@@ -5831,15 +5831,15 @@ button.close {
     text-align: center;
     background-color: transparent !important; }
     .home.blog #primary .front-page .tn-image {
-      height: 100px;
+      height: 50px;
       overflow: hidden; }
-      .home.blog #primary .front-page .tn-image img {
-        margin-top: -15px; }
+    .home.blog #primary .front-page .tn-image.no-image img {
+      margin-top: -65px; }
     .home.blog #primary .front-page p {
       margin-top: 8px; }
     .home.blog #primary .front-page .article-wrapper {
       background-color: #CDFFDC;
-      min-height: 160px;
+      min-height: 100px;
       padding: 6px; }
     .home.blog #primary .front-page h1, .home.blog #primary .front-page h3 {
       display: inline-block;

@@ -50,11 +50,10 @@
 			background-color: transparent !important; 
 
 			.tn-image{
-				height: 100px; 
+				height: 50px; 
 				overflow: hidden; 
-				img{
-					margin-top: -15px; 
-				}
+			}.tn-image.no-image img{
+				margin-top: -65px; 
 			}
 
 			p{
@@ -63,7 +62,7 @@
 
 			.article-wrapper{
 				background-color: $primary-color; 
-				min-height: 160px; 		
+				min-height: 100px; 		
 				padding: 6px; 
 			}
 

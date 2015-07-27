@@ -26,7 +26,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class( "front-page" ); ?>>
-					<a href="<?php the_permalink(); ?>" >
+					<a href="<?php the_permalink(); ?>" title="<?php the_title() ?>" >
 						<div class='article-wrapper'>
 							<?php
 								$out = "";
@@ -40,7 +40,7 @@ get_header(); ?>
 									    	$out .= "</div>";					
 										}else{
 											$out = "";
-											$out .= "<div class='" . "tn-image" . "'>";
+											$out .= "<div class='" . "tn-image no-image" . "'>";
 												$out .= "<img src='" . get_template_directory_uri() . "/images/g7875_small.png" . "' alt='" . get_the_title() . "'>";
 											$out .= "</div>";	
 										}									
