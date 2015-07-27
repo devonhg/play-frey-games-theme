@@ -47,9 +47,9 @@ get_header(); ?>
 									}
 
 
-								$out .= "<h3>";
+								$out .= "<p>";
 								$out .= get_the_title(); 
-								$out .= "</h3>"; 
+								$out .= "</p>"; 
 
 								echo $out; 
 
