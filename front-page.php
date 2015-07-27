@@ -26,35 +26,37 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class( "front-page" ); ?>>
-					<div class='article-wrapper'>
-						<?php
-							$out = "";
-								if ( is_page() ){
-									get_template_part( 'template-parts/content', get_post_format() );
-								}else{
-									if ( has_post_thumbnail( $post->ID ) ){
-										
-								    	$out .= "<div class='" . "tn-image" . "'>";
-								    		$out .= get_the_post_thumbnail( $post->ID, "medium" ); 
-								    	$out .= "</div>";					
+					<a href="<?php the_permalink(); ?>" >
+						<div class='article-wrapper'>
+							<?php
+								$out = "";
+									if ( is_page() ){
+										get_template_part( 'template-parts/content', get_post_format() );
 									}else{
-										$out = "";
-										$out .= "<div class='" . "tn-image" . "'>";
-											$out .= "<img src='" . get_template_directory_uri() . "/images/g7875_small.png" . "' alt='" . get_the_title() . "'>";
-										$out .= "</div>";	
-									}									
-								}
+										if ( has_post_thumbnail( $post->ID ) ){
+											
+									    	$out .= "<div class='" . "tn-image" . "'>";
+									    		$out .= get_the_post_thumbnail( $post->ID, "medium" ); 
+									    	$out .= "</div>";					
+										}else{
+											$out = "";
+											$out .= "<div class='" . "tn-image" . "'>";
+												$out .= "<img src='" . get_template_directory_uri() . "/images/g7875_small.png" . "' alt='" . get_the_title() . "'>";
+											$out .= "</div>";	
+										}									
+									}
 
 
-							$out .= "<h3>";
-							$out .= get_the_title(); 
-							$out .= "</h3>"; 
+								$out .= "<h3>";
+								$out .= get_the_title(); 
+								$out .= "</h3>"; 
 
-							echo $out; 
+								echo $out; 
 
-							//the_title(); 
-						?>
-					</div>
+								//the_title(); 
+							?>
+						</div>
+					</a>
 				</article>
 
 			<?php endwhile; ?>
