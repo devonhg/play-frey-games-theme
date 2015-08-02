@@ -40,40 +40,6 @@
 		#main{
 			@extend .row; 
 		}
-
-		//Front Page class and modifications
-		.front-page{
-			//border: 3px solid red; 
-			@extend .col-sm-3;
-
-			text-align: center; 
-			background-color: transparent !important; 
-
-			.tn-image{
-				height: 50px; 
-				overflow: hidden; 
-			}.tn-image.no-image img{
-				margin-top: -65px; 
-			}
-
-			p{
-				margin-top: 8px;
-			}
-
-			.article-wrapper{
-				background-color: $primary-color; 
-				min-height: 100px; 		
-				padding: 6px; 
-			}
-
-			h1, h3{
-				display: inline-block; 
-				margin: 0;
-				padding: 0; 
-			}h3{
-				padding: 8px 0; 
-			}
-		}		
 	}
 }
 
@@ -218,4 +184,79 @@
 		height: auto;
 	}
 
+	/* The news shortcode 
+	.front-page-news-wrapper{
+		@extend .row;
+
+		article{ @extend .col-sm-3; }
+	}
+	*/
+
 }
+
+/*********************
+* Shortcode CSS
+*********************/
+	//Front Page class and modifications
+	#above-content, 
+	#below-content{
+		.front-page-news-wrapper{ 
+			@extend .row; 
+			margin: 0;
+		}
+		.front-page-news{
+			//border: 3px solid red; 
+			@extend .col-sm-3;
+
+			text-align: center; 
+			background-color: transparent !important; 
+
+			a{
+				text-decoration: none; 
+			}
+
+			.tn-image{
+				height: 50px; 
+				overflow: hidden; 
+				background-color: #222;
+				vertical-align: middle; 
+				img{
+					width: 100%;
+					height: auto; 
+				}
+				p{
+					color: $tertiary-color; 
+					font-weight: normal; 
+				}
+			}.tn-image.no-image img{
+				//margin-top: -65px; 
+			}
+
+			p{
+				margin-top: 8px;
+				color: #222; 
+				font-weight: bold; 
+			}
+
+			.article-wrapper{
+				background-color: $primary-color; 
+				min-height: 100px; 		
+				padding: 6px; 
+			}
+
+			h1, h3{
+				display: inline-block; 
+				margin: 0;
+				padding: 0; 
+			}h3{
+				padding: 8px 0; 
+			}
+		}	
+	}	
+
+/********************
+* Page Templates CSS
+********************/
+	.full-content-area{
+		width: 100% !important; 
+	}
