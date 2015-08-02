@@ -45,6 +45,7 @@
 
 #content{
 	font-family: Georgia, serif;
+
 	#primary{
 		@extend .col-sm-8;
 
@@ -207,7 +208,7 @@
 		.front-page-news{
 			//border: 3px solid red; 
 			@extend .col-sm-3;
-			margin-top: 15px; 
+			margin-top: 25px; 
 
 			text-align: center; 
 			background-color: transparent !important; 
@@ -241,7 +242,7 @@
 
 			.article-wrapper{
 				background-color: $primary-color; 
-				min-height: 100px; 		
+				height: 100px; 		
 				padding: 6px; 
 			}
 
@@ -260,4 +261,11 @@
 ********************/
 	.full-content-area{
 		width: 100% !important; 
+	}
+
+/********************
+* Widget Adjustments
+********************/
+	.widget-title{
+		text-align: center; 
 	}
