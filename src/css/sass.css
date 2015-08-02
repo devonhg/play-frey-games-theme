@@ -5928,6 +5928,7 @@ button.close {
   margin: 0; }
 #above-content .front-page-news,
 #below-content .front-page-news {
+  margin-top: 15px;
   text-align: center;
   background-color: transparent !important; }
   #above-content .front-page-news a,

@@ -207,6 +207,7 @@
 		.front-page-news{
 			//border: 3px solid red; 
 			@extend .col-sm-3;
+			margin-top: 15px; 
 
 			text-align: center; 
 			background-color: transparent !important; 
