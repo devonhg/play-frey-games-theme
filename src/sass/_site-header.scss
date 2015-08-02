@@ -1,6 +1,6 @@
 #masthead{
 
-	@extend .p-def-padding;
+	//@extend .p-def-padding;
 	//@extend .container; 
 
 	img{
@@ -18,7 +18,7 @@
 
 	.wrapper-line{
 		border-bottom: 2px solid $grey-color; 
-		@extend .p-def-padding; 
+		//@extend .p-def-padding; 
 	}.wrapper-line:after{
 		@extend .clearfix; 
 	}

@@ -5692,7 +5692,7 @@ button.close {
   display: inline-block;
   margin: 0 auto; }
 
-.p-def-padding, .p-att-button, .p-banner, #masthead, #masthead .wrapper-line, #colophon {
+.p-def-padding, .p-att-button, .p-banner, #colophon {
   padding: 20px; }
 
 .p-col-centered {
@@ -5972,13 +5972,20 @@ button.close {
 * Page Templates CSS
 ********************/
 .full-content-area {
-  width: 100% !important; }
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
 
 /********************
 * Widget Adjustments
 ********************/
 .widget-title {
   text-align: center; }
+
+#page #above-content,
+#page #below-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
 
 body {
   background-color: #111;
