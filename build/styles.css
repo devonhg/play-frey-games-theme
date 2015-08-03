@@ -6048,6 +6048,9 @@ img {
   * News Shortcode
   **********************/
   .tn-image {
+    height: auto !important; }
+
+  .article-wrapper {
     height: auto !important; } }
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
