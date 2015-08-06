@@ -47,38 +47,64 @@
 	font-family: Georgia, serif;
 
 
+	/***********************
+	* Primary Content Area
+	***********************/
+		#primary{
+			@extend .col-sm-8;
 
+			.entry-header, .page-header{ 
+				@extend .p-header-primary;
+			}
 
-	#primary{
-		@extend .col-sm-8;
+			.entry-content, 
+			.page-content,
+			.entry-summary{
+				padding: 15px; 
+				font-size: 120%;
+				font-family: Georgia, serif;
+			}
 
-		.entry-header, .page-header{ 
-			@extend .p-header-primary;
+			article, section{
+				background-color: lighten( $primary-color, 5%);
+			}
+
+			.GMEPLG-news-main-header{
+				@extend .p-header-secondary;
+
+				text-align: center; 
+				color: $secondary-color;
+				margin: 20px 0;  
+			}
+
+			.footer-title{
+				text-align: center; 
+			}
+
+			footer{
+				text-align: center;
+				background-color: $secondary-color; 
+				padding: 5px; 
+				border-top: 4px solid $grey-color; 
+
+				.cat-links a{
+					border-radius: 4px; 
+				}
+
+				.tags-links{
+					display: block; 
+					padding: 6px;
+
+					a{
+						border-right: 2px solid $tertiary-color; 
+						padding: 2px; 
+						padding-right: 4px; 
+					}a:last-child{
+						border: none; 
+					}
+				}
+			}
 		}
-
-		.entry-content, 
-		.page-content,
-		.entry-summary{
-			padding: 15px; 
-			font-size: 120%;
-			font-family: Georgia, serif;
-		}
-
-		article, section{
-			background-color: lighten( $primary-color, 5%);
-		}
-
-		.GMEPLG-news-main-header{
-			@extend .p-header-secondary;
-
-			text-align: center; 
-			color: $secondary-color;
-			margin: 20px 0;  
-		}
-
-	
-
-	}
 
 	#secondary{
 		@extend .col-sm-4;
@@ -115,7 +141,7 @@
 		display: inline-block; 
 	}
 
-	.tags-links a{
+	.cat-links .tags-links a{
 		margin: 0;
 		padding: 4px; 
 		background-color: #fff;
@@ -123,7 +149,7 @@
 
 	.cat-links a,
 	.tags-links a{
-		margin-bottom: 5px;
+		//margin-bottom: 5px;
 	}
 
 	.page-header{
@@ -282,3 +308,16 @@
 			margin-right: 0 !important; 
 		}	
 	}
+
+/******************
+* Archive Rules
+******************/
+.archive #page{
+
+	#main{
+		.page-header{
+			margin-bottom: 1.5em; 
+			border-bottom: none; 
+		}
+	}
+}

@@ -36,6 +36,8 @@
 		?>
 	</div><!-- .entry-content -->
 
+	<h3 class='footer-title'>Categories and Tags</h3>
+
 	<footer class="entry-footer">
 		<?php _s_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

@@ -5837,6 +5837,9 @@ button.close {
 
 #content {
   font-family: Georgia, serif;
+  /***********************
+  * Primary Content Area
+  ***********************/
   	/* The news shortcode 
   	.front-page-news-wrapper{
   		@extend .row;
@@ -5856,6 +5859,24 @@ button.close {
     text-align: center;
     color: #50F39F;
     margin: 20px 0; }
+  #content #primary .footer-title {
+    text-align: center; }
+  #content #primary footer {
+    text-align: center;
+    background-color: #50F39F;
+    padding: 5px;
+    border-top: 4px solid #222; }
+    #content #primary footer .cat-links a {
+      border-radius: 4px; }
+    #content #primary footer .tags-links {
+      display: block;
+      padding: 6px; }
+      #content #primary footer .tags-links a {
+        border-right: 2px solid #DA4747;
+        padding: 2px;
+        padding-right: 4px; }
+      #content #primary footer .tags-links a:last-child {
+        border: none; }
   #content #secondary {
     color: #999; }
     #content #secondary ul, #content #secondary div {
@@ -5875,13 +5896,10 @@ button.close {
   #content .cat-links a:hover {
     text-decoration: none;
     display: inline-block; }
-  #content .tags-links a {
+  #content .cat-links .tags-links a {
     margin: 0;
     padding: 4px;
     background-color: #fff; }
-  #content .cat-links a,
-  #content .tags-links a {
-    margin-bottom: 5px; }
   #content .page-header {
     color: #CDFFDC;
     border-bottom: 3px solid #222; }
@@ -5986,6 +6004,13 @@ button.close {
 #page #below-content {
   margin-left: 0 !important;
   margin-right: 0 !important; }
+
+/******************
+* Archive Rules
+******************/
+.archive #page #main .page-header {
+  margin-bottom: 1.5em;
+  border-bottom: none; }
 
 body {
   background-color: #111;

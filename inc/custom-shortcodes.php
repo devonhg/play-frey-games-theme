@@ -29,7 +29,7 @@ class pfg_custom_sc{
 									}else{
 										//$out = "";
 										$out .= "<div class='" . "tn-image no-image" . "'>";
-											$out .= "<p>" . get_bloginfo('name') . " News Post</p>";
+											$out .= "<p>" . get_the_title( $query->ID ) . "</p>";
 										$out .= "</div>";	
 									}									
 									$out .= "<p>";
