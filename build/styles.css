@@ -6012,6 +6012,14 @@ button.close {
   margin-bottom: 1.5em;
   border-bottom: none; }
 
+/***************************
+* Social Media Modifications
+***************************/
+#fb-root,
+.fb-page {
+  padding: 0 !important;
+  margin: 0 !important; }
+
 body {
   background-color: #111;
   background-size: contain;
