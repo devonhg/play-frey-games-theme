@@ -331,3 +331,23 @@
 	padding: 0 !important;
 	margin: 0 !important; 
 }
+#facebook-widget{
+	p{
+		margin: 0; 
+	}
+
+	*[style]{
+		width: 100% !important;
+	}
+}
+
+#facebook-widget p{
+	
+}#facebook-widget *{
+	width: 100% !important; 
+}
+
+#page #twitter-widget,
+#page #facebook-widget{
+	padding: 0; 
+}
