@@ -332,6 +332,9 @@
 	margin: 0 !important; 
 }
 #facebook-widget{
+	display: inline-block;
+	width: 340px;
+
 	p{
 		margin: 0; 
 	}
@@ -339,6 +342,7 @@
 	*[style]{
 		width: 100% !important;
 	}
+
 }
 
 #facebook-widget p{
@@ -350,4 +354,25 @@
 #page #twitter-widget,
 #page #facebook-widget{
 	padding: 0; 
+}
+
+#page .social-google{
+	padding: 0 !important; 
+	p{
+		margin: 0;
+		padding: 0; 
+		height: 0; 
+	}
+	/*height: 500px;
+	background-color: #1d1d1d; 
+
+
+
+	div:first-child{
+		height: 100%; 
+	}
+
+	#widget_bounds{
+		border: none; 
+	}*/
 }

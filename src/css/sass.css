@@ -6020,10 +6020,13 @@ button.close {
   padding: 0 !important;
   margin: 0 !important; }
 
-#facebook-widget p {
-  margin: 0; }
-#facebook-widget *[style] {
-  width: 100% !important; }
+#facebook-widget {
+  display: inline-block;
+  width: 340px; }
+  #facebook-widget p {
+    margin: 0; }
+  #facebook-widget *[style] {
+    width: 100% !important; }
 
 #facebook-widget * {
   width: 100% !important; }
@@ -6031,6 +6034,25 @@ button.close {
 #page #twitter-widget,
 #page #facebook-widget {
   padding: 0; }
+
+#page .social-google {
+  padding: 0 !important;
+  	/*height: 500px;
+  	background-color: #1d1d1d; 
+  
+  
+  
+  	div:first-child{
+  		height: 100%; 
+  	}
+  
+  	#widget_bounds{
+  		border: none; 
+  	}*/ }
+  #page .social-google p {
+    margin: 0;
+    padding: 0;
+    height: 0; }
 
 body {
   background-color: #111;
