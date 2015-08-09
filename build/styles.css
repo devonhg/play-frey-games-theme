@@ -6022,7 +6022,7 @@ button.close {
 
 #facebook-widget {
   display: inline-block;
-  width: 340px; }
+  width: 320px; }
   #facebook-widget p {
     margin: 0; }
   #facebook-widget *[style] {
@@ -6118,7 +6118,13 @@ img {
     height: auto !important; }
 
   .article-wrapper {
-    height: auto !important; } }
+    height: auto !important; }
+
+  /*************************
+  * Facebook Like Box
+  *************************/
+  #facebook-widget {
+    width: 253px !important; } }
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 
