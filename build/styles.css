@@ -5840,6 +5840,9 @@ button.close {
   /***********************
   * Primary Content Area
   ***********************/
+  /*********************
+  * No Back Template
+  *********************/
   	/* The news shortcode 
   	.front-page-news-wrapper{
   		@extend .row;
@@ -5877,6 +5880,18 @@ button.close {
         padding-right: 4px; }
       #content #primary footer .tags-links a:last-child {
         border: none; }
+  #content #primary.no-back {
+    padding: 0; }
+    #content #primary.no-back article {
+      background-color: transparent;
+      padding: 0; }
+    #content #primary.no-back h1 {
+      font-size: 36px; }
+    #content #primary.no-back .entry-content {
+      padding: 0;
+      margin-top: 0; }
+      #content #primary.no-back .entry-content article {
+        background-color: #e7ffee; }
   #content #secondary {
     color: #999; }
     #content #secondary ul, #content #secondary div {
