@@ -6148,6 +6148,12 @@ button.close {
   #page #comments .form-submit input {
     float: right; }
 
+/*******************************
+* Plugin Specific Modifiations
+*******************************/
+._5lm5._2pi3._3-8y a {
+  display: none; }
+
 /*
 * The universal rules, don't apply to any particular area. 
 *
@@ -6210,6 +6216,11 @@ img {
         background-color: #222; }
       #masthead nav a:hover {
         border-bottom: none; }
+
+  #page ul,
+  #page ol {
+    margin-left: 0 !important;
+    padding-left: 20px; }
 
   .container, #page {
     padding: 2px !important; }
