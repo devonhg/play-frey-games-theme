@@ -1,0 +1,43 @@
+/*
+* The universal rules, don't apply to any particular area. 
+*
+*
+*/
+
+textarea{
+	max-width: 100%; 
+	padding: 10px; 
+}
+
+body{
+	background-color: #111;
+	background-size: contain;
+	background-repeat: no-repeat !important; 
+	background-position: center center !important; 
+	background-attachment: fixed !important; 
+}
+
+img{
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+#page{
+	@extend .container;
+	background-color: #000;
+}
+
+#search .hentry{
+	margin: 20px 0; 
+}
+
+#page .btn{
+	@extend .p-button-reset;
+	background-color: $grey-color; 
+	color: $secondary-color;
+	padding: 15px; 
+	border-radius: 10px; 
+	font-size: 100%;
+	text-transform: uppercase; 
+	font-family: color_basicregular;
+}

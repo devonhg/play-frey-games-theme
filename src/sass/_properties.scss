@@ -3,91 +3,141 @@
 	for inheritence. 
 */
 
-.p-inline-center{
-	display: inline-block;
-	margin: 0 auto; 
-}
+/*************************
+* Resets
+*************************/
 
-.p-def-padding{
-	padding: 20px; 
-}
-
-.p-col-centered{
-	float: none; 
-	margin: 0 auto; 
-}
-
-.p-button-reset{
-	border: none; 
-	-webkit-appearance:none;
-	outline: none;	
-	box-shadow: none; 
-	text-shadow: none; 
-}
-
-.p-def-pad-bottom{
-	margin-bottom: 25px; 	
-}
-
-.p-menu-highlight{
-	background-color: darken( $primary-color, 10% );
-	//color: #fff; 
-	border-radius: 3px;	
-}
-
-.p-att-button{
-	background: $secondary-color;
-	text-shadow: 2px 2px rgba(0,0,0,.2);
-	color: #fff;
-	border-radius: 8px; 	
-	font-family: 'Oswald'; 
-	font-weight: normal; 
-	@extend .p-def-padding;
-}
-
-.p-banner{
-	background: $primary-color;
-	color: darken( $primary-color, 45% );
-	border-left: 6px solid darken( $primary-color, 45% );
-	border-radius: 4px;
-	@extend .p-def-padding;
-}
-
-.p-header-secondary{
-	font-family: color_basicregular;
-	text-transform: uppercase; 
-	background-color: $grey-color; 
-	padding: 8px; 
-	margin: 0;
-	h1,h2,h3,h4,h5,h6 { margin: 0; }
-	font-size: 100%;
-	color: $font-grey-color;
-	a:hover{
-		text-decoration: none; 
+	.p-button-reset{
+		background: none;
+	    border: 0;
+	    color: inherit;
+	    /* cursor: default; */
+	    font: inherit;
+	    line-height: normal;
+	    overflow: visible;
+	    padding: 0;
+	    outline-style: none; 
+	    outline-color: transparent; 
+	    -webkit-appearance: button; /* for input */
+	    -webkit-user-select: none; /* for button */
+	       -moz-user-select: none;
+	        -ms-user-select: none;
+	}.p-button-reset:focus{
+	    outline-style: none; 
+	    outline-color: transparent; 		
 	}
-}
 
-.p-header-primary{
-	@extend .p-header-secondary; 
-	color: $secondary-color; 
-	border-left: 6px solid darken( $secondary-color, 30% );	
-	text-align: center; 
-	h1,h2,h3 { 
-		border-bottom: 2px solid $tertiary-color; 
-		text-align: center; 
+/*******************************
+* Design Properties
+*******************************/
+
+	.p-inline-center{
+		display: inline-block;
+		margin: 0 auto; 
 	}
-}
 
+	.p-def-padding{
+		padding: 20px; 
+	}
 
+	.p-col-centered{
+		float: none; 
+		margin: 0 auto; 
+	}
 
-@media screen and (max-width: $mobile-size){
-	.p-mobile-reset{
-		width: 100%;
-		display: block;
-		float: none; 	
+	.p-button-reset{
+		border: none; 
+		-webkit-appearance:none;
+		outline: none;	
+		box-shadow: none; 
+		text-shadow: none; 
+	}
+
+	.p-def-pad-bottom{
+		margin-bottom: 25px; 	
+	}
+
+	.p-menu-highlight{
+		background-color: darken( $primary-color, 10% );
+		//color: #fff; 
+		border-radius: 3px;	
 	}
 
 	.p-att-button{
-
+		background: $secondary-color;
+		text-shadow: 2px 2px rgba(0,0,0,.2);
+		color: #fff;
+		border-radius: 8px; 	
+		font-family: 'Oswald'; 
+		font-weight: normal; 
+		@extend .p-def-padding;
 	}
-}
+
+	.p-banner{
+		background: $primary-color;
+		color: darken( $primary-color, 45% );
+		border-left: 6px solid darken( $primary-color, 45% );
+		border-radius: 4px;
+		@extend .p-def-padding;
+	}
+
+	.p-header-secondary{
+		font-family: color_basicregular;
+		text-transform: uppercase; 
+		background-color: $grey-color; 
+		padding: 8px; 
+		margin: 0;
+		h1,h2,h3,h4,h5,h6 { margin: 0; }
+		font-size: 100%;
+		color: $font-grey-color;
+		a:hover{
+			text-decoration: none; 
+		}
+	}
+
+	.p-header-primary{
+		@extend .p-header-secondary; 
+		color: $secondary-color; 
+		border-left: 6px solid darken( $secondary-color, 30% );	
+		text-align: center; 
+		h1,h2,h3 { 
+			border-bottom: 2px solid $tertiary-color; 
+			text-align: center; 
+		}
+	}
+
+	.p-dark-button{
+		margin: 0;
+		padding: 8px; 
+		background: $grey-color; 	
+		border-radius: 4px; 
+		color: $tertiary-color; 
+		padding: 8px; 
+		a:hover{
+			text-decoration: none; 
+		}
+	}.p-dark-button:hover{
+		text-decoration: none; 
+	}
+
+	.p-clearfix{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+/********************************
+* Mobile
+********************************/
+
+	@media screen and (max-width: $mobile-size){
+		.p-mobile-reset{
+			width: 100%;
+			display: block;
+			float: none; 	
+		}
+
+		.p-att-button{
+
+		}
+	}

@@ -158,9 +158,7 @@
 
 
 	.cat-links a{
-		margin: 0;
-		padding: 8px; 
-		background-color: $grey-color; 
+		@extend .p-dark-button;
 		display: inline-block;
 	}.cat-links a:hover{
 		text-decoration: none; 
@@ -351,54 +349,115 @@
 /***************************
 * Social Media Modifications
 ***************************/
+	#fb-root,
+	.fb-page{
+		padding: 0 !important;
+		margin: 0 !important; 
+	}
+	#facebook-widget{
+		display: inline-block;
+		width: 320px;
 
-#fb-root,
-.fb-page{
-	padding: 0 !important;
-	margin: 0 !important; 
-}
-#facebook-widget{
-	display: inline-block;
-	width: 320px;
+		p{
+			margin: 0; 
+		}
 
-	p{
-		margin: 0; 
+		*[style]{
+			width: 100% !important;
+		}
+
 	}
 
-	*[style]{
-		width: 100% !important;
+	#facebook-widget p{
+		
+	}#facebook-widget *{
+		width: 100% !important; 
 	}
 
-}
-
-#facebook-widget p{
-	
-}#facebook-widget *{
-	width: 100% !important; 
-}
-
-#page #twitter-widget,
-#page #facebook-widget{
-	padding: 0; 
-}
-
-#page .social-google{
-	padding: 0 !important; 
-	p{
-		margin: 0;
+	#page #twitter-widget,
+	#page #facebook-widget{
 		padding: 0; 
-		height: 0; 
-	}
-	/*height: 500px;
-	background-color: #1d1d1d; 
-
-
-
-	div:first-child{
-		height: 100%; 
 	}
 
-	#widget_bounds{
-		border: none; 
-	}*/
-}
+	#page .social-google{
+		padding: 0 !important; 
+		p{
+			margin: 0;
+			padding: 0; 
+			height: 0; 
+		}
+		/*height: 500px;
+		background-color: #1d1d1d; 
+
+
+
+		div:first-child{
+			height: 100%; 
+		}
+
+		#widget_bounds{
+			border: none; 
+		}*/
+	}
+
+/**********************
+* Comment Section
+**********************/
+	#page{
+		#comments{
+			background-color: lighten( $primary-color, 5%);
+			.comments-title{
+				text-align: center; 
+				@extend .p-header-secondary;
+			}
+
+			.comment-list,
+			#respond{
+				padding: 20px; 
+				margin: 0; 
+			}
+
+			.comment-meta{
+				text-align: left; 
+			}
+
+			.comment-list{
+				list-style-type: none; 
+
+				li{
+					margin-bottom: 15px; 
+				}
+				.comment-content{
+					padding: 50px 15px; 
+				}
+
+				.reply{
+					padding: 0;
+					border-top: 2px solid $grey-color; 
+					padding-top: 15px; 
+					a{
+						@extend .p-dark-button;
+						//width: 50px;
+						padding: 10px;
+						display: inline-block; 
+						float: right; 
+					}
+				}.reply:after{
+					@extend .p-clearfix;
+				}
+
+				.children{
+					margin-top: 15px; 
+					padding-left: 1em; 
+				}
+			}
+
+			.form-submit input{
+				@extend .p-button-reset;
+				@extend .p-dark-button;
+				float: right; 
+			}.form-submit:after{
+				@extend .p-clearfix; 
+			}
+		}
+	}

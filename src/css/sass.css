@@ -5688,6 +5688,34 @@ button.close {
 	This is the properties files, mostly for classes that have attributes 
 	for inheritence. 
 */
+/*************************
+* Resets
+*************************/
+.p-button-reset, #masthead .menu-toggle, #page #comments .form-submit input, #page .btn {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  outline-style: none;
+  outline-color: transparent;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+.p-button-reset:focus, #masthead .menu-toggle:focus, #page #comments .form-submit input:focus, #page .btn:focus {
+  outline-style: none;
+  outline-color: transparent; }
+
+/*******************************
+* Design Properties
+*******************************/
 .p-inline-center {
   display: inline-block;
   margin: 0 auto; }
@@ -5699,7 +5727,7 @@ button.close {
   float: none;
   margin: 0 auto; }
 
-.p-button-reset, #masthead .menu-toggle, #page .btn {
+.p-button-reset, #masthead .menu-toggle, #page #comments .form-submit input, #page .btn {
   border: none;
   -webkit-appearance: none;
   outline: none;
@@ -5728,7 +5756,7 @@ button.close {
   border-radius: 4px; }
 
 .p-header-secondary, .p-header-primary, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header, #above-content h1,
-#below-content h1, #content #primary .GMEPLG-news-main-header, #content #secondary .widget-title {
+#below-content h1, #content #primary .GMEPLG-news-main-header, #content #secondary .widget-title, #page #comments .comments-title {
   font-family: color_basicregular;
   text-transform: uppercase;
   background-color: #222;
@@ -5737,15 +5765,15 @@ button.close {
   font-size: 100%;
   color: #99998A; }
   .p-header-secondary h1, .p-header-primary h1, #content #primary .entry-header h1, #content #primary .page-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, #above-content h1 h1,
-  #below-content h1 h1, #content #primary .GMEPLG-news-main-header h1, #content #secondary .widget-title h1, .p-header-secondary h2, .p-header-primary h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, #above-content h1 h2,
-  #below-content h1 h2, #content #primary .GMEPLG-news-main-header h2, #content #secondary .widget-title h2, .p-header-secondary h3, .p-header-primary h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3, #above-content h1 h3,
-  #below-content h1 h3, #content #primary .GMEPLG-news-main-header h3, #content #secondary .widget-title h3, .p-header-secondary h4, .p-header-primary h4, #content #primary .entry-header h4, #content #primary .page-header h4, #content .type-pt_games.ar_shortcode h1 h4, #content .GMEPLG-news .GMEPLG-news-header h4, #above-content h1 h4,
-  #below-content h1 h4, #content #primary .GMEPLG-news-main-header h4, #content #secondary .widget-title h4, .p-header-secondary h5, .p-header-primary h5, #content #primary .entry-header h5, #content #primary .page-header h5, #content .type-pt_games.ar_shortcode h1 h5, #content .GMEPLG-news .GMEPLG-news-header h5, #above-content h1 h5,
-  #below-content h1 h5, #content #primary .GMEPLG-news-main-header h5, #content #secondary .widget-title h5, .p-header-secondary h6, .p-header-primary h6, #content #primary .entry-header h6, #content #primary .page-header h6, #content .type-pt_games.ar_shortcode h1 h6, #content .GMEPLG-news .GMEPLG-news-header h6, #above-content h1 h6,
-  #below-content h1 h6, #content #primary .GMEPLG-news-main-header h6, #content #secondary .widget-title h6 {
+  #below-content h1 h1, #content #primary .GMEPLG-news-main-header h1, #content #secondary .widget-title h1, #page #comments .comments-title h1, .p-header-secondary h2, .p-header-primary h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, #above-content h1 h2,
+  #below-content h1 h2, #content #primary .GMEPLG-news-main-header h2, #content #secondary .widget-title h2, #page #comments .comments-title h2, .p-header-secondary h3, .p-header-primary h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3, #above-content h1 h3,
+  #below-content h1 h3, #content #primary .GMEPLG-news-main-header h3, #content #secondary .widget-title h3, #page #comments .comments-title h3, .p-header-secondary h4, .p-header-primary h4, #content #primary .entry-header h4, #content #primary .page-header h4, #content .type-pt_games.ar_shortcode h1 h4, #content .GMEPLG-news .GMEPLG-news-header h4, #above-content h1 h4,
+  #below-content h1 h4, #content #primary .GMEPLG-news-main-header h4, #content #secondary .widget-title h4, #page #comments .comments-title h4, .p-header-secondary h5, .p-header-primary h5, #content #primary .entry-header h5, #content #primary .page-header h5, #content .type-pt_games.ar_shortcode h1 h5, #content .GMEPLG-news .GMEPLG-news-header h5, #above-content h1 h5,
+  #below-content h1 h5, #content #primary .GMEPLG-news-main-header h5, #content #secondary .widget-title h5, #page #comments .comments-title h5, .p-header-secondary h6, .p-header-primary h6, #content #primary .entry-header h6, #content #primary .page-header h6, #content .type-pt_games.ar_shortcode h1 h6, #content .GMEPLG-news .GMEPLG-news-header h6, #above-content h1 h6,
+  #below-content h1 h6, #content #primary .GMEPLG-news-main-header h6, #content #secondary .widget-title h6, #page #comments .comments-title h6 {
     margin: 0; }
   .p-header-secondary a:hover, .p-header-primary a:hover, #content #primary .entry-header a:hover, #content #primary .page-header a:hover, #content .type-pt_games.ar_shortcode h1 a:hover, #content .GMEPLG-news .GMEPLG-news-header a:hover, #above-content h1 a:hover,
-  #below-content h1 a:hover, #content #primary .GMEPLG-news-main-header a:hover, #content #secondary .widget-title a:hover {
+  #below-content h1 a:hover, #content #primary .GMEPLG-news-main-header a:hover, #content #secondary .widget-title a:hover, #page #comments .comments-title a:hover {
     text-decoration: none; }
 
 .p-header-primary, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header {
@@ -5756,6 +5784,27 @@ button.close {
     border-bottom: 2px solid #DA4747;
     text-align: center; }
 
+.p-dark-button, #content .cat-links a, #page #comments .comment-list .reply a, #page #comments .form-submit input {
+  margin: 0;
+  padding: 8px;
+  background: #222;
+  border-radius: 4px;
+  color: #DA4747;
+  padding: 8px; }
+  .p-dark-button a:hover, #content .cat-links a a:hover, #page #comments .comment-list .reply a a:hover, #page #comments .form-submit input a:hover {
+    text-decoration: none; }
+
+.p-dark-button:hover, #content .cat-links a:hover, #page #comments .comment-list .reply a:hover, #page #comments .form-submit input:hover {
+  text-decoration: none; }
+
+.p-clearfix, #page #comments .comment-list .reply:after, #page #comments .form-submit:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/********************************
+* Mobile
+********************************/
 @media screen and (max-width: 599px) {
   .p-mobile-reset {
     width: 100%;
@@ -5904,9 +5953,6 @@ button.close {
   #content #primary a {
     color: #DA4747; }
   #content .cat-links a {
-    margin: 0;
-    padding: 8px;
-    background-color: #222;
     display: inline-block; }
   #content .cat-links a:hover {
     text-decoration: none;
@@ -6052,22 +6098,64 @@ button.close {
 
 #page .social-google {
   padding: 0 !important;
-  	/*height: 500px;
-  	background-color: #1d1d1d; 
+  		/*height: 500px;
+  		background-color: #1d1d1d; 
   
   
   
-  	div:first-child{
-  		height: 100%; 
-  	}
+  		div:first-child{
+  			height: 100%; 
+  		}
   
-  	#widget_bounds{
-  		border: none; 
-  	}*/ }
+  		#widget_bounds{
+  			border: none; 
+  		}*/ }
   #page .social-google p {
     margin: 0;
     padding: 0;
     height: 0; }
+
+/**********************
+* Comment Section
+**********************/
+#page #comments {
+  background-color: #e7ffee; }
+  #page #comments .comments-title {
+    text-align: center; }
+  #page #comments .comment-list,
+  #page #comments #respond {
+    padding: 20px;
+    margin: 0; }
+  #page #comments .comment-meta {
+    text-align: left; }
+  #page #comments .comment-list {
+    list-style-type: none; }
+    #page #comments .comment-list li {
+      margin-bottom: 15px; }
+    #page #comments .comment-list .comment-content {
+      padding: 50px 15px; }
+    #page #comments .comment-list .reply {
+      padding: 0;
+      border-top: 2px solid #222;
+      padding-top: 15px; }
+      #page #comments .comment-list .reply a {
+        padding: 10px;
+        display: inline-block;
+        float: right; }
+    #page #comments .comment-list .children {
+      margin-top: 15px;
+      padding-left: 1em; }
+  #page #comments .form-submit input {
+    float: right; }
+
+/*
+* The universal rules, don't apply to any particular area. 
+*
+*
+*/
+textarea {
+  max-width: 100%;
+  padding: 10px; }
 
 body {
   background-color: #111;
