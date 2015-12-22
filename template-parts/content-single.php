@@ -36,8 +36,9 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<h3 class='footer-title'>Categories and Tags</h3>
-
+	<?php if( get_post_type( $post->ID ) == 'post' ){ ?>
+		<h3 class='footer-title'>Categories and Tags</h3>
+	<?php } ?>
 	<footer class="entry-footer">
 		<?php _s_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

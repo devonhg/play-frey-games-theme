@@ -1,3 +1,13 @@
+//General
+	input[type*="submit"]{//Submit Buttons
+		@extend .p-button-reset;
+		@extend .p-att-button;
+	}input[type*="submit"]:focus, input[type*="submit"]:hover{
+		//@extend .p-button-reset;
+		box-shadow: none; 
+	}
+
+
 #above-content,
 #below-content{
 	@extend .row; 
@@ -31,7 +41,7 @@
 	.front-header{
 		text-align: center; 
 		color: $primary-color;
-		text-decoration: underline; 
+		//text-decoration: underline; 
 	}
 
 	#primary{
@@ -43,6 +53,47 @@
 	}
 }
 
+//Woocommerce Properties
+	.page-title{
+		@extend .p-header-primary;
+		text-align: center; 
+		color: $primary-color;
+		font-size: 36px;
+		margin-bottom: 10px; 
+	}
+
+	#main{
+		background-color: lighten( $primary-color, 5%);
+		//height: 500px; 
+		//Title/Archive Corrections
+			font-size: 120%;
+			font-family: Georgia, serif;
+			.products{
+				margin: 15px; 
+			}
+
+			.woocommerce-result-count{
+				margin-left: 15px; 
+			}
+
+			.orderby{
+				margin-right: 15px; 
+			}
+
+		//Single Product Page Corrections
+			.product{
+				.tabs.wc-tabs{
+					display: none;
+				} 
+
+				#tab-description{
+					background-color: lighten( $primary-color, 5%); 
+					border-top: 3px solid $secondary-color; 
+					border-radius: 0; 
+				}
+			}
+	}
+
 #content{
 	font-family: Georgia, serif;
 
@@ -52,6 +103,73 @@
 	***********************/
 		#primary{
 			@extend .col-sm-8;
+
+			.nav-links{
+				@extend .p-nav-links;
+			}.nav-links:after{
+				@extend .p-clearfix;
+			}
+
+			//Donations Area
+				.paypal-donations{
+					margin-top: 35px; 
+					background-color: $grey-color; 
+					border-radius: 4px; 
+					padding: 15px; 
+					text-align: center; 
+					font-size: 120%;
+
+					h2{
+						@extend .p-header-primary;
+						border: 0px; 
+						font-size: 150%; 
+					}
+					span, select{
+						display: block; 
+					}select{
+						width: 100%; 
+						height: 40px; 
+						margin: 9px 0; 
+						text-align: center; 
+					}span{
+						color: $font-grey-color;
+						font-size: 80%; 
+					}
+
+					.paypal-submit{
+						width: 100%; 
+						color: #000;
+						font-family: color_basicregular;
+						text-transform: uppercase; 
+						text-shadow: none; 
+						font-size: 120%;
+						border-radius: 0;  
+					}
+				}
+			//Donations Area Social
+				.paypal-social{
+					padding: 15px; 
+					margin-top: 15px; 
+					span:first-child{
+						margin-bottom: 15px; 
+					}
+					.paypal-social-button{
+						margin: 15px;
+						color: $secondary-color; 
+					}
+				}
+
+			//Youtube Video
+				.youtube_vid{
+					@extend .p-yt-vid;
+
+					margin-bottom:15px; 
+				}
+
+			//Extensions content Modifications
+				.GMEPLG-content{
+					margin-bottom: 15px; 
+				}
 
 			.entry-header, .page-header{ 
 				@extend .p-header-primary;

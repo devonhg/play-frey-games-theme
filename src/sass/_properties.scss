@@ -100,10 +100,10 @@
 		color: $secondary-color; 
 		border-left: 6px solid darken( $secondary-color, 30% );	
 		text-align: center; 
-		h1,h2,h3 { 
+		/*h1,h2,h3 { 
 			border-bottom: 2px solid $tertiary-color; 
 			text-align: center; 
-		}
+		}*/
 	}
 
 	.p-dark-button{
@@ -124,6 +124,32 @@
 		content: "";
 		display: table;
 		clear: both;
+	}
+
+	//This property is for the fancy social buttons,
+	//mostly used in the donations area. 
+	.p-fancy-social{
+		i{
+			color: $grey-color; 
+		}
+	}
+
+	.p-nav-links{
+		padding: 15px; 
+	}
+
+	.p-yt-vid{
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+		iframe, object, embed{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 /********************************

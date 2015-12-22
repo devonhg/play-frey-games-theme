@@ -5691,7 +5691,7 @@ button.close {
 /*************************
 * Resets
 *************************/
-.p-button-reset, #masthead .menu-toggle, #page #comments .form-submit input, #page .btn {
+.p-button-reset, #masthead .menu-toggle, input[type*="submit"], #page #comments .form-submit input, #page .btn {
   background: none;
   border: 0;
   color: inherit;
@@ -5709,7 +5709,7 @@ button.close {
   -moz-user-select: none;
   -ms-user-select: none; }
 
-.p-button-reset:focus, #masthead .menu-toggle:focus, #page #comments .form-submit input:focus, #page .btn:focus {
+.p-button-reset:focus, #masthead .menu-toggle:focus, input[type*="submit"]:focus, #page #comments .form-submit input:focus, #page .btn:focus {
   outline-style: none;
   outline-color: transparent; }
 
@@ -5720,14 +5720,14 @@ button.close {
   display: inline-block;
   margin: 0 auto; }
 
-.p-def-padding, .p-att-button, .p-banner, #colophon {
+.p-def-padding, .p-att-button, input[type*="submit"], .p-banner, #colophon {
   padding: 20px; }
 
 .p-col-centered {
   float: none;
   margin: 0 auto; }
 
-.p-button-reset, #masthead .menu-toggle, #page #comments .form-submit input, #page .btn {
+.p-button-reset, #masthead .menu-toggle, input[type*="submit"], #page #comments .form-submit input, #page .btn {
   border: none;
   -webkit-appearance: none;
   outline: none;
@@ -5741,7 +5741,7 @@ button.close {
   background-color: #9affb8;
   border-radius: 3px; }
 
-.p-att-button {
+.p-att-button, input[type*="submit"] {
   background: #50F39F;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -5755,7 +5755,7 @@ button.close {
   border-left: 6px solid #00e745;
   border-radius: 4px; }
 
-.p-header-secondary, .p-header-primary, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header, #above-content h1,
+.p-header-secondary, .p-header-primary, .page-title, #content #primary .paypal-donations h2, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header, #above-content h1,
 #below-content h1, #content #primary .GMEPLG-news-main-header, #content #secondary .widget-title, #page #comments .comments-title {
   font-family: color_basicregular;
   text-transform: uppercase;
@@ -5764,25 +5764,26 @@ button.close {
   margin: 0;
   font-size: 100%;
   color: #99998A; }
-  .p-header-secondary h1, .p-header-primary h1, #content #primary .entry-header h1, #content #primary .page-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, #above-content h1 h1,
-  #below-content h1 h1, #content #primary .GMEPLG-news-main-header h1, #content #secondary .widget-title h1, #page #comments .comments-title h1, .p-header-secondary h2, .p-header-primary h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, #above-content h1 h2,
-  #below-content h1 h2, #content #primary .GMEPLG-news-main-header h2, #content #secondary .widget-title h2, #page #comments .comments-title h2, .p-header-secondary h3, .p-header-primary h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3, #above-content h1 h3,
-  #below-content h1 h3, #content #primary .GMEPLG-news-main-header h3, #content #secondary .widget-title h3, #page #comments .comments-title h3, .p-header-secondary h4, .p-header-primary h4, #content #primary .entry-header h4, #content #primary .page-header h4, #content .type-pt_games.ar_shortcode h1 h4, #content .GMEPLG-news .GMEPLG-news-header h4, #above-content h1 h4,
-  #below-content h1 h4, #content #primary .GMEPLG-news-main-header h4, #content #secondary .widget-title h4, #page #comments .comments-title h4, .p-header-secondary h5, .p-header-primary h5, #content #primary .entry-header h5, #content #primary .page-header h5, #content .type-pt_games.ar_shortcode h1 h5, #content .GMEPLG-news .GMEPLG-news-header h5, #above-content h1 h5,
-  #below-content h1 h5, #content #primary .GMEPLG-news-main-header h5, #content #secondary .widget-title h5, #page #comments .comments-title h5, .p-header-secondary h6, .p-header-primary h6, #content #primary .entry-header h6, #content #primary .page-header h6, #content .type-pt_games.ar_shortcode h1 h6, #content .GMEPLG-news .GMEPLG-news-header h6, #above-content h1 h6,
+  .p-header-secondary h1, .p-header-primary h1, .page-title h1, #content #primary .paypal-donations h2 h1, #content #primary .entry-header h1, #content #primary .page-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, #above-content h1 h1,
+  #below-content h1 h1, #content #primary .GMEPLG-news-main-header h1, #content #secondary .widget-title h1, #page #comments .comments-title h1, .p-header-secondary h2, .p-header-primary h2, .page-title h2, #content #primary .paypal-donations h2 h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, #above-content h1 h2,
+  #below-content h1 h2, #content #primary .GMEPLG-news-main-header h2, #content #secondary .widget-title h2, #page #comments .comments-title h2, .p-header-secondary h3, .p-header-primary h3, .page-title h3, #content #primary .paypal-donations h2 h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3, #above-content h1 h3,
+  #below-content h1 h3, #content #primary .GMEPLG-news-main-header h3, #content #secondary .widget-title h3, #page #comments .comments-title h3, .p-header-secondary h4, .p-header-primary h4, .page-title h4, #content #primary .paypal-donations h2 h4, #content #primary .entry-header h4, #content #primary .page-header h4, #content .type-pt_games.ar_shortcode h1 h4, #content .GMEPLG-news .GMEPLG-news-header h4, #above-content h1 h4,
+  #below-content h1 h4, #content #primary .GMEPLG-news-main-header h4, #content #secondary .widget-title h4, #page #comments .comments-title h4, .p-header-secondary h5, .p-header-primary h5, .page-title h5, #content #primary .paypal-donations h2 h5, #content #primary .entry-header h5, #content #primary .page-header h5, #content .type-pt_games.ar_shortcode h1 h5, #content .GMEPLG-news .GMEPLG-news-header h5, #above-content h1 h5,
+  #below-content h1 h5, #content #primary .GMEPLG-news-main-header h5, #content #secondary .widget-title h5, #page #comments .comments-title h5, .p-header-secondary h6, .p-header-primary h6, .page-title h6, #content #primary .paypal-donations h2 h6, #content #primary .entry-header h6, #content #primary .page-header h6, #content .type-pt_games.ar_shortcode h1 h6, #content .GMEPLG-news .GMEPLG-news-header h6, #above-content h1 h6,
   #below-content h1 h6, #content #primary .GMEPLG-news-main-header h6, #content #secondary .widget-title h6, #page #comments .comments-title h6 {
     margin: 0; }
-  .p-header-secondary a:hover, .p-header-primary a:hover, #content #primary .entry-header a:hover, #content #primary .page-header a:hover, #content .type-pt_games.ar_shortcode h1 a:hover, #content .GMEPLG-news .GMEPLG-news-header a:hover, #above-content h1 a:hover,
+  .p-header-secondary a:hover, .p-header-primary a:hover, .page-title a:hover, #content #primary .paypal-donations h2 a:hover, #content #primary .entry-header a:hover, #content #primary .page-header a:hover, #content .type-pt_games.ar_shortcode h1 a:hover, #content .GMEPLG-news .GMEPLG-news-header a:hover, #above-content h1 a:hover,
   #below-content h1 a:hover, #content #primary .GMEPLG-news-main-header a:hover, #content #secondary .widget-title a:hover, #page #comments .comments-title a:hover {
     text-decoration: none; }
 
-.p-header-primary, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header {
+.p-header-primary, .page-title, #content #primary .paypal-donations h2, #content #primary .entry-header, #content #primary .page-header, #content .type-pt_games.ar_shortcode h1, #content .GMEPLG-news .GMEPLG-news-header {
   color: #50F39F;
   border-left: 6px solid #0b9f53;
-  text-align: center; }
-  .p-header-primary h1, #content #primary .entry-header h1, #content #primary .page-header h1, #content .type-pt_games.ar_shortcode h1 h1, #content .GMEPLG-news .GMEPLG-news-header h1, .p-header-primary h2, #content #primary .entry-header h2, #content #primary .page-header h2, #content .type-pt_games.ar_shortcode h1 h2, #content .GMEPLG-news .GMEPLG-news-header h2, .p-header-primary h3, #content #primary .entry-header h3, #content #primary .page-header h3, #content .type-pt_games.ar_shortcode h1 h3, #content .GMEPLG-news .GMEPLG-news-header h3 {
-    border-bottom: 2px solid #DA4747;
-    text-align: center; }
+  text-align: center;
+  /*h1,h2,h3 { 
+  	border-bottom: 2px solid $tertiary-color; 
+  	text-align: center; 
+  }*/ }
 
 .p-dark-button, #content .cat-links a, #page #comments .comment-list .reply a, #page #comments .form-submit input {
   margin: 0;
@@ -5797,10 +5798,29 @@ button.close {
 .p-dark-button:hover, #content .cat-links a:hover, #page #comments .comment-list .reply a:hover, #page #comments .form-submit input:hover {
   text-decoration: none; }
 
-.p-clearfix, #page #comments .comment-list .reply:after, #page #comments .form-submit:after {
+.p-clearfix, #content #primary .nav-links:after, #page #comments .comment-list .reply:after, #page #comments .form-submit:after {
   content: "";
   display: table;
   clear: both; }
+
+.p-fancy-social i {
+  color: #222; }
+
+.p-nav-links, #content #primary .nav-links {
+  padding: 15px; }
+
+.p-yt-vid, #content #primary .youtube_vid {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+  .p-yt-vid iframe, #content #primary .youtube_vid iframe, .p-yt-vid object, #content #primary .youtube_vid object, .p-yt-vid embed, #content #primary .youtube_vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 /********************************
 * Mobile
@@ -5848,6 +5868,9 @@ button.close {
   font-weight: bold;
   background-color: #CDFFDC; }
 
+input[type*="submit"]:focus, input[type*="submit"]:hover {
+  box-shadow: none; }
+
 #above-content,
 #below-content {
   color: #50F39F;
@@ -5879,10 +5902,32 @@ button.close {
 /*Home Page Settings*/
 .home.blog .front-header {
   text-align: center;
-  color: #CDFFDC;
-  text-decoration: underline; }
+  color: #CDFFDC; }
 .home.blog #primary {
   width: 100% !important; }
+
+.page-title {
+  text-align: center;
+  color: #CDFFDC;
+  font-size: 36px;
+  margin-bottom: 10px; }
+
+#main {
+  background-color: #e7ffee;
+  font-size: 120%;
+  font-family: Georgia, serif; }
+  #main .products {
+    margin: 15px; }
+  #main .woocommerce-result-count {
+    margin-left: 15px; }
+  #main .orderby {
+    margin-right: 15px; }
+  #main .product .tabs.wc-tabs {
+    display: none; }
+  #main .product #tab-description {
+    background-color: #e7ffee;
+    border-top: 3px solid #50F39F;
+    border-radius: 0; }
 
 #content {
   font-family: Georgia, serif;
@@ -5899,6 +5944,46 @@ button.close {
   		article{ @extend .col-sm-3; }
   	}
   	*/ }
+  #content #primary .paypal-donations {
+    margin-top: 35px;
+    background-color: #222;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    font-size: 120%; }
+    #content #primary .paypal-donations h2 {
+      border: 0px;
+      font-size: 150%; }
+    #content #primary .paypal-donations span, #content #primary .paypal-donations select {
+      display: block; }
+    #content #primary .paypal-donations select {
+      width: 100%;
+      height: 40px;
+      margin: 9px 0;
+      text-align: center; }
+    #content #primary .paypal-donations span {
+      color: #99998A;
+      font-size: 80%; }
+    #content #primary .paypal-donations .paypal-submit {
+      width: 100%;
+      color: #000;
+      font-family: color_basicregular;
+      text-transform: uppercase;
+      text-shadow: none;
+      font-size: 120%;
+      border-radius: 0; }
+  #content #primary .paypal-social {
+    padding: 15px;
+    margin-top: 15px; }
+    #content #primary .paypal-social span:first-child {
+      margin-bottom: 15px; }
+    #content #primary .paypal-social .paypal-social-button {
+      margin: 15px;
+      color: #50F39F; }
+  #content #primary .youtube_vid {
+    margin-bottom: 15px; }
+  #content #primary .GMEPLG-content {
+    margin-bottom: 15px; }
   #content #primary .entry-content,
   #content #primary .page-content,
   #content #primary .entry-summary {
@@ -6224,6 +6309,9 @@ img {
 
   .container, #page {
     padding: 2px !important; }
+
+  .paypal-submit {
+    font-size: 80% !important; }
 
   /**********************
   * News Shortcode

@@ -156,6 +156,8 @@ function _s_scripts() {
 	wp_enqueue_style( '_s-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'pfg-style', get_template_directory_uri() . "/build/styles.min.css" );
+	wp_enqueue_style('font-awesome', "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
 	wp_enqueue_script( 'pfg-scripts', get_template_directory_uri() . "/build/scripts.min.js", array(), '1.0.0', true );
 
 	wp_enqueue_script( '_s-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
