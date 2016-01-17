@@ -6239,6 +6239,26 @@ input[type*="submit"]:focus, input[type*="submit"]:hover {
 ._5lm5._2pi3._3-8y a {
   display: none; }
 
+.rpwe_widget ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+.rpwe_widget a {
+  color: #DA4747; }
+.rpwe_widget a:hover {
+  text-decoration: none; }
+.rpwe_widget img {
+  width: 100%;
+  height: auto; }
+.rpwe_widget li {
+  padding-bottom: 15px;
+  border-bottom: 2px solid white;
+  margin-bottom: 15px; }
+.rpwe_widget li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
 /*
 * The universal rules, don't apply to any particular area. 
 *

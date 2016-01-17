@@ -586,3 +586,32 @@
 ._5lm5._2pi3._3-8y a{
 	display: none; 
 }
+
+//Recent Posts Extended
+	.rpwe_widget{
+		ul { 
+			list-style-type: none; 
+			padding: 0;
+			margin: 0;
+		}
+
+		a{ color: $tertiary-color; }
+		a:hover{ text-decoration: none; }
+
+		img{
+			width: 100%;
+			height: auto; 
+		}
+
+		$li-pad : 15px; 
+
+		li{
+			padding-bottom: $li-pad;
+			border-bottom: 2px solid white; 
+			margin-bottom: $li-pad; 
+		}li:last-child{
+			border-bottom: 0;
+			padding-bottom: 0;
+			margin-bottom: 0; 
+		}
+	}
